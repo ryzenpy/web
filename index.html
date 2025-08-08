@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryzenpy</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="icon" type="image/jpg" href="codex.jpg">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body
+    class="bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-zinc-900 via-black to-black text-white">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <div class="w-80 border-r border-zinc-800/50 bg-black/50 backdrop-blur-xl p-8 space-y-8 hidden md:block">
+            <!-- Profile -->
+            <div class="text-center space-y-4">
+                <div class="relative w-32 h-32 mx-auto">
+                    <img src="codex.jpg"
+                        alt="Profile" class="w-full h-full rounded-full border-2 border-zinc-800/50">
+                    <div
+                        class="absolute bottom-0 right-0 w-8 h-8 bg-zinc-900 rounded-full border-2 border-zinc-800 flex items-center justify-center">
+                        <span class="text-yellow-400">&lt;/&gt;</span>
+                    </div>
+                </div>
+                <div>
+                    <h1 class="text-2xl font-bold">Ryzenpy</h1>
+                    <h2 class="text-xl text-zinc-400">A Guy who just loves coding and Learning more!</h2>
+                </div>
+            </div>
+            <div class="space-y-2 border-l-2 border-zinc-700 pl-4">
+                <h2 class="text-lg font-semibold text-zinc-200 mb-2">Profile Information</h2>
+                <div class="flex items-center gap-2">
+                    <span>👑</span>
+                    <span class="text-gray-400 font-medium">Interest:</span>
+                    <span class="text-zinc-200">React.js</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>📄</span>
+                    <span class="text-gray-400 font-medium">Language:</span>
+                    <span class="text-zinc-200">English</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span>💼</span>
+                    <span class="text-gray-400 font-medium">Project:</span>
+                    <span class="text-zinc-200">Ryzenpy</span>
+                </div>
+            </div>
+            <!-- Socials -->
+            <div class="space-y-4">
+                <h3 class="text-lg font-semibold">Socials</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <a href=""
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="far fa-envelope"></i>
+                        <span>Email</span>
+                    </a>
+                    <a href="https://discord.gg/Vwk8Sksfuz"
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://discord.gg/Vwk8Sksfuz"
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-discord"></i>
+                        <span>Discord</span>
+                    </a>
+                    <a href="https://github.com/ApsXminer"
+                        class="flex items-center gap-2 text-zinc-400 hover:text-white transition-colors">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="block md:hidden">
+            <button id="menu-toggle" class="p-4 bg-accent text-black rounded-lg">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Main Content -->
+        <main class="flex-1 p-12">
+            <!-- Skills Grid -->
+            <section class="mb-24">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Languages -->
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-code text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Languages</div>
+                                <div class="text-zinc-400 text-lg">Programming</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 flex items-center gap-2">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
+                                    class="w-4 h-4">Python
+                            </span>
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 flex items-center gap-2">
+                                <i class="fab fa-node-js text-[#339933]"></i>
+                                Node.js
+                            </span>
+                        </div>
+                    </div>
+                    <!-- Software -->
+                    <div
+                        class="group hover:-translate-y-1 bg-black/40 backdrop-blur-sm p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300 shadow-lg hover:shadow-accent/20">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div
+                                class="w-14 h-14 bg-accent/5 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform">
+                                <i class="fas fa-tools text-accent text-2xl"></i>
+                            </div>
+                            <div>
+                                <div
+                                    class="text-3xl lg:text-4xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text">
+                                    Software</div>
+                            </div>
+                        </div>
+                        <div class="flex flex-wrap gap-2">
+                            <span
+                                class="px-4 py-2 bg-black/60 rounded-xl text-zinc-300 border border-zinc-800/50 flex items-center gap-2">
+                                <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg"
+                                    class="w-4 h-4">VS Code
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Projects -->
+            <section>
+                <h2
+                    class="text-4xl lg:text-5xl font-bold bg-gradient-to-r from-white to-zinc-400 text-transparent bg-clip-text mb-12">
+                    Latest Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Project Card -->
+                    <div
+                        class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Code X Security</h3>
+                        <p class="text-zinc-400 mb-4">An Emece Multipurpose Bot Built in Python Powerful Security and
+                            Good features! Everything a server needs!</p>
+                        <div class="flex gap-4">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1362680985497636885&permissions=8&integration_type=0&scope=bot+applications.commands"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Project Card -->
+                    <div
+                        class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">SubSheild</h3>
+                        <p class="text-zinc-400 mb-4">A Discord Bot That Verifies Subscriber Screenshots and assigns roles, plus basic moderation commands.</p>
+                        <div class="flex gap-4">
+                            <a href="https://discord.com/oauth2/authorize?client_id=1366897259933077574&permissions=8&scope=bot+applications.commands"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Feast -->
+                    <div
+                        class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">Feast</h3>
+                        <p class="text-zinc-400 mb-4">A community tool to enhance server engagement and features.</p>
+                        <div class="flex gap-4">
+                            <a href="https://dsc.gg/getfeast"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /cravings -->
+                    <div
+                        class="group hover:-translate-y-1 bg-zinc-900/30 backdrop-blur-sm hover:bg-zinc-800/30 p-8 rounded-2xl border border-zinc-800/50 transition-all duration-300">
+                        <h3 class="text-2xl font-bold mb-2">/cravings</h3>
+                        <p class="text-zinc-400 mb-4">A Discord bot project for managing and satisfying user cravings.</p>
+                        <div class="flex gap-4">
+                            <a href="#"
+                                class="text-accent hover:text-accent-hover transition-colors flex items-center gap-2">
+                                <i class="fas fa-code"></i>
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
